@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon API App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pokémon Finder</h1>
+
+    <!-- Search Pokémon by Name or ID -->
+    <div class="search-box">
+      <input type="text" id="pokemonInput" placeholder="Enter name or ID">
+      <button id="searchPokemon">Search Pokémon</button>
+    </div>
+
+    <!-- Extra Searches -->
+    <div class="extra-search">
+      <input type="text" id="typeInput" placeholder="Enter type (e.g., fire)">
+      <button id="searchType">Search by Type</button>
+
+      <input type="text" id="abilityInput" placeholder="Enter ability (e.g., overgrow)">
+      <button id="searchAbility">Search by Ability</button>
+
+      <input type="text" id="moveInput" placeholder="Enter move (e.g., thunder-punch)">
+      <button id="searchMove">Search Move</button>
+    </div>
+
+    <div id="loading" class="loading hidden">Loading...</div>
+    <div id="pokemonInfo" class="card"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
