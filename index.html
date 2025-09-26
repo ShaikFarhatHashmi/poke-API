@@ -7,31 +7,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Pokémon Finder</h1>
+  <h1>Pokémon Explorer</h1>
 
-    <!-- Search Pokémon by Name or ID -->
-    <div class="search-box">
-      <input type="text" id="pokemonInput" placeholder="Enter name or ID">
-      <button id="searchPokemon">Search Pokémon</button>
-    </div>
-
-    <!-- Extra Searches -->
-    <div class="extra-search">
-      <input type="text" id="typeInput" placeholder="Enter type (e.g., fire)">
-      <button id="searchType">Search by Type</button>
-
-      <input type="text" id="abilityInput" placeholder="Enter ability (e.g., overgrow)">
-      <button id="searchAbility">Search by Ability</button>
-
-      <input type="text" id="moveInput" placeholder="Enter move (e.g., thunder-punch)">
-      <button id="searchMove">Search Move</button>
-    </div>
-
-    <div id="loading" class="loading hidden">Loading...</div>
-    <div id="pokemonInfo" class="card"></div>
+  <!-- Search Bar -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search Pokémon by name or ID...">
+    <button id="searchBtn">Search</button>
+    <button id="list-pokemon">All List </button>
+    
+  </div>
   </div>
 
-  <script src="app.js"></script>
+  <!-- Load & Pagination -->
+  
+  
+  <!-- <div id="loading" class="hidden">Loading...</div> -->
+    <!-- Loader -->
+  <div id="loader" class="hidden">
+    <div class="spinner"></div>
+  </div>
+
+  <div id="pokemonList" class="pokemon-list"></div>
+  
+  <div class="pagination">
+    <button id="prevPage" disabled>Previous</button>
+    <button id="nextPage">Next</button>
+
+  <!-- Main script -->
+  <script type="module" src="./js/app.js"></script>
 </body>
 </html>
